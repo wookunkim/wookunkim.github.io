@@ -52,3 +52,17 @@ Teaching documents are linked from `teaching/index.html`.
 ## Before launch at www.wookunkim.com
 
 The site is currently staged with `noindex`. Remove the noindex directives and update `robots.txt` only when the custom domain is ready to replace the old Google Sites version.
+
+
+## Selected research on the homepage
+
+The homepage automatically reads the Research page when it loads. It displays:
+
+1. The first two papers listed under `Selected working papers & work in progress`
+2. The first three papers listed under `Publications & forthcoming`
+
+So, to change the two working papers featured on the homepage, simply reorder the paper blocks in `research/index.html`. The homepage follows that order automatically. A static fallback with the current five selections remains in `index.html` for browsers with JavaScript disabled.
+
+## Coauthor links
+
+Coauthor names are hyperlinked directly in each `paper-coauthors` line. To change a coauthor's webpage, edit the `href="..."` attached to that name.
