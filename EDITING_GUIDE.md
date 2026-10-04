@@ -58,11 +58,20 @@ The site is currently staged with `noindex`. Remove the noindex directives and u
 
 The homepage automatically reads the Research page when it loads. It displays:
 
-1. The first two papers listed under `Selected working papers & work in progress`
+1. The first two papers listed under `Working papers`
 2. The first three papers listed under `Publications & forthcoming`
 
-So, to change the two working papers featured on the homepage, simply reorder the paper blocks in `research/index.html`. The homepage follows that order automatically. A static fallback with the current five selections remains in `index.html` for browsers with JavaScript disabled.
+So, to change the two working papers featured on the homepage, simply reorder the paper blocks inside the `Working papers` section of `research/index.html`. The homepage follows that order automatically. A static fallback with the current five selections remains in `index.html` for browsers with JavaScript disabled.
 
 ## Coauthor links
 
 Coauthor names are hyperlinked directly in each `paper-coauthors` line. To change a coauthor's webpage, edit the `href="..."` attached to that name.
+
+
+## Work in progress
+
+Items in the `Work in progress` section display abstracts but do not link their titles to incomplete title-page files. Until a full draft is public, use:
+
+```html
+<span class="availability-note">Draft available soon</span>
+```
