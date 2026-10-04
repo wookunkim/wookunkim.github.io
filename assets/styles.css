@@ -48,14 +48,15 @@ h3 {letter-spacing: -.012em;}
 .action-links a:hover {text-decoration: underline;}
 .action-links .primary {padding: 9px 18px; border: 1px solid var(--accent); border-radius: 2px;}
 .action-links .primary:hover {background: var(--accent); color: var(--paper); text-decoration: none;}
-.email-display {color: var(--muted); font-weight: 400; user-select: all;}
-.email-text {color: var(--muted); user-select: all;}
 .profile-rail {padding-top: 4px;}
 .rail-block {border-top: 1px solid var(--line); padding: 20px 0;}
 .rail-label {font: 600 11px/1.5 var(--sans); text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin-bottom: 14px;}
 .rail-block p {font-size: 14px; line-height: 1.65; margin-bottom: 14px;}
 .rail-block p:last-child {margin-bottom: 0;}
 .rail-block strong {font-weight: 500; color: var(--ink);}
+.affiliation-link {color: var(--ink); text-decoration: none;}
+.affiliation-link:hover {color: var(--accent); text-decoration: underline;}
+.affiliation-link .external-mark {font-size: .75em; margin-left: 5px;}
 .rail-block span {color: var(--muted);}
 .rail-block a {font-size: 14px; overflow-wrap: anywhere;}
 .portrait {width: 180px; height: 225px; object-fit: cover; object-position: 50% 40%; margin: 0 0 24px; display: block;}
