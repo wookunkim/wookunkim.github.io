@@ -25,7 +25,6 @@
     const type = document.createElement('span');
     type.className = 'stamp-type';
     if (kind === 'publication') type.textContent = 'Publication';
-    else if (status && text(status) === 'Work in progress') type.textContent = 'Work in progress';
     else type.textContent = 'Working paper';
 
     stamp.appendChild(type);
