@@ -1,0 +1,229 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found</title><meta name="description" content="The requested page could not be found."><meta name="robots" content="noindex, nofollow"><meta property="og:title" content="Page not found"><meta property="og:description" content="The requested page could not be found."><meta property="og:type" content="website"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 48 48%27%3E%3Crect width=%2748%27 height=%2748%27 fill=%27%23843e3b%27/%3E%3Ctext x=%2724%27 y=%2732%27 text-anchor=%27middle%27 font-size=%2724%27 font-family=%27Georgia%27 fill=%27white%27%3EW%3C/text%3E%3C/svg%3E"><style>
+/* A restrained academic layout. Edit these variables to change the theme. */
+:root {
+  --paper: #fcfbf8;
+  --surface: #f3f1ec;
+  --white: #ffffff;
+  --ink: #222a30;
+  --muted: #59636b;
+  --accent: #843e3b;
+  --line: #deded7;
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  --width: 1080px;
+}
+* {box-sizing: border-box;}
+html {scroll-behavior: auto; scroll-padding-top: 24px;}
+body {margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.65 var(--sans); -webkit-font-smoothing: antialiased;}
+[hidden] {display: none !important;}
+a {color: var(--accent); text-underline-offset: 4px; text-decoration-thickness: 1px;}
+a:hover {text-decoration: underline;}
+a:focus-visible, summary:focus-visible, button:focus-visible {outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 1px;}
+img {max-width: 100%; height: auto;}
+button {font: inherit;}
+p {margin: 0 0 1em;}
+h1,h2,h3 {font-weight: 400; line-height: 1.22; margin: 0;}
+h1,h2 {font-family: var(--serif); letter-spacing: -.025em;}
+h3 {letter-spacing: -.012em;}
+.wrap {max-width: var(--width); margin: 0 auto; width: calc(100% - 80px);}
+.skip-link {position: absolute; top: -100px; left: 20px; z-index: 20; background: var(--paper); padding: 12px 20px;}
+.skip-link:focus {top: 16px;}
+.site-header {border-top: 4px solid var(--accent); border-bottom: 1px solid var(--line);}
+.header-inner {min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 24px;}
+.brand {font: 24px/1.2 var(--serif); color: var(--ink); text-decoration: none; white-space: nowrap;}
+.main-nav {display: flex; align-items: center; gap: 32px; font-size: 15px;}
+.main-nav a {display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; color: var(--muted);}
+.main-nav a:hover, .main-nav a[aria-current="page"] {color: var(--accent);}
+.main-nav a[aria-current="page"] {text-decoration: underline; text-underline-offset: 9px;}
+.main-nav .cv-nav {border-left: 1px solid var(--line); padding-left: 26px; color: var(--accent);}
+.external-mark {font-size: .85em; margin-left: 7px;}
+.eyebrow {font: 600 11px/1.5 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 15px;}
+.hero {display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 82px; padding: 48px 0 42px; border-bottom: 1px solid var(--line);}
+.hero h1 {font-size: clamp(42px,5.3vw,64px); margin-bottom: 16px;}
+.role {font-size: 18px; margin-bottom: 0;}
+.institution {font-size: 17px; color: var(--muted); margin: 0 0 26px;}
+.research-lead {font: 26px/1.43 var(--serif); letter-spacing: -.01em; max-width: 680px; margin: 0 0 18px;}
+.hero-description {max-width: 660px; line-height: 1.8; margin-bottom: 22px;}
+.action-links {display: flex; gap: 22px; flex-wrap: wrap; align-items: center; font-size: 15px; font-weight: 500;}
+.action-links a {min-height: 40px; display: inline-flex; align-items: center; text-decoration: none;}
+.action-links a:hover {text-decoration: underline;}
+.action-links .primary {padding: 9px 18px; border: 1px solid var(--accent); border-radius: 2px;}
+.action-links .primary:hover {background: var(--accent); color: var(--paper); text-decoration: none;}
+.profile-rail {padding-top: 4px;}
+.rail-block {border-top: 1px solid var(--line); padding: 20px 0;}
+.rail-label {font: 600 11px/1.5 var(--sans); text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin-bottom: 14px;}
+.rail-block p {font-size: 14px; line-height: 1.65; margin-bottom: 14px;}
+.rail-block p:last-child {margin-bottom: 0;}
+.rail-block strong {font-weight: 500; color: var(--ink);}
+.rail-block span {color: var(--muted);}
+.rail-block a {font-size: 14px; overflow-wrap: anywhere;}
+.portrait {width: 180px; height: 225px; object-fit: cover; object-position: 50% 40%; margin: 0 0 24px; display: block;}
+.mobile-portrait-wrap {display: none;}
+.portrait-mobile {display: none;}
+.section {padding: 43px 0 38px;}
+.section-heading {display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 8px;}
+.section-heading h2 {font-size: 32px;}
+.section-heading a {font-size: 14px; text-decoration: none;}
+.section-heading a:hover {text-decoration: underline;}
+.featured-paper {display: grid; grid-template-columns: 125px minmax(0,1fr); gap: 32px; border-bottom: 1px solid var(--line); padding: 26px 0 25px;}
+.paper-stamp {font-size: 12px; line-height: 1.5; color: var(--muted); padding-top: 3px;}
+.paper-stamp .stamp-type {display: block; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .095em; color: var(--accent); margin-bottom: 6px;}
+.featured-paper h3 {font: 23px/1.32 var(--serif);}
+.featured-paper h3 a, .paper h3 a {color: var(--ink); text-decoration: none;}
+.featured-paper h3 a:hover, .paper h3 a:hover {color: var(--accent); text-decoration: underline;}
+.paper-coauthors {color: var(--muted); font-size: 14px; margin: 8px 0 0;}
+.featured-paper .venue {font-size: 14px; margin: 7px 0 0; color: var(--accent); font-weight: 500;}
+.paper-description {font-size: 15px; line-height: 1.7; color: var(--muted); margin: 9px 0 5px;}
+.paper-links {display: flex; gap: 20px; flex-wrap: wrap; align-items: center; font-size: 13px; margin-top: 10px;}
+.paper-links a {min-height: 34px; display: inline-flex; align-items: center; text-decoration: none;}
+.paper-links a:hover {text-decoration: underline;}
+.home-teaching {display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 82px; padding: 6px 0 54px;}
+.home-teaching h2 {font-size: 28px; margin-bottom: 14px;}
+.home-teaching p {font-size: 15px; color: var(--muted);}
+.home-teaching a {font-size: 14px;}
+.award-note {border-left: 2px solid var(--accent); padding-left: 20px; align-self: start;}
+.award-note .eyebrow {font-size: 10px; margin-bottom: 9px;}
+.award-note h3 {font: 21px/1.3 var(--serif); margin-bottom: 8px;}
+.award-note p {font-size: 13px; margin: 0;}
+.site-footer {border-top: 1px solid var(--line); padding: 25px 0 29px; font-size: 12px; color: var(--muted);}
+.footer-inner {display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap;}
+.footer-inner p {margin: 0;}
+.footer-inner a {text-decoration: none;}
+.page-intro {padding: 56px 0 32px;}
+.page-intro h1 {font-size: 52px; margin-bottom: 18px;}
+.page-intro .intro {font: 23px/1.5 var(--serif); max-width: 740px; margin-bottom: 0;}
+.research-layout {display: grid; grid-template-columns: 185px minmax(0,1fr); gap: 55px; align-items: start; padding-top: 22px; padding-bottom: 48px;}
+.section-nav {position: sticky; top: 28px; font-size: 13px; border-top: 1px solid var(--line); padding-top: 20px;}
+.section-nav a {display: block; margin: 0 0 10px; padding: 7px 0; color: var(--muted); line-height: 1.5; text-decoration: none;}
+.section-nav a:hover {color: var(--accent); text-decoration: underline;}
+.section-nav .rail-label {margin-bottom: 15px;}
+.research-section {padding-bottom: 43px;}
+.research-section h2 {font-size: 30px; padding-bottom: 20px; border-bottom: 1px solid var(--line);}
+.paper {padding: 26px 0 27px; border-bottom: 1px solid var(--line); scroll-margin-top: 30px;}
+.paper h3 {font: 23px/1.38 var(--serif);}
+.paper-meta {display: flex; align-items: baseline; gap: 7px 12px; flex-wrap: wrap; font-size: 13px; margin: 10px 0 0; line-height: 1.6;}
+.paper-meta .venue {color: var(--accent); font-weight: 500;}
+.paper-meta .status, .paper-meta .date {color: var(--muted);}
+.paper-meta .rr {font-weight: 600; color: var(--accent);}
+.paper .paper-description {margin-top: 11px;}
+details {font-size: 14px;}
+.paper details {margin-top: 7px;}
+summary {color: var(--accent); cursor: pointer; width: fit-content; min-height: 34px; padding: 6px 0; font-size: 13px; list-style-position: outside; margin-left: 15px;}
+details[open] summary {margin-bottom: 10px;}
+.abstract-text {background: var(--surface); padding: 19px 22px; border-left: 2px solid var(--line); font-size: 14px; line-height: 1.85;}
+.abstract-text p:last-child {margin-bottom: 0;}
+.previous-title {font-size: 12px; color: var(--muted); margin-top: 14px;}
+.teaching-intro {max-width: 840px;}
+.teaching-intro .intro {max-width: 830px;}
+.teaching-body {padding-top: 18px; padding-bottom: 64px;}
+.teaching-body .statement {max-width: 780px; font-size: 17px; margin-bottom: 34px;}
+.teaching-materials {max-width: 780px; margin: 0 0 34px; padding: 20px 0 22px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);}
+.teaching-materials .rail-label {margin-bottom: 12px;}
+.teaching-materials .action-links {margin-top: 0;}
+.teaching-section {padding: 29px 0 14px; border-top: 1px solid var(--line);}
+.teaching-section h2 {font-size: 30px; margin-bottom: 25px;}
+.awards-grid {display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 32px; padding-bottom: 25px;}
+.award {border-left: 2px solid var(--line); padding-left: 21px;}
+.award:first-child {border-left-color: var(--accent);}
+.award .year {font-size: 12px; color: var(--accent); margin-bottom: 9px;}
+.award h3 {font: 21px/1.35 var(--serif); margin-bottom: 8px;}
+.award p:last-child {font-size: 13px; color: var(--muted); margin: 0;}
+.course {display: grid; grid-template-columns: minmax(0,1fr) 125px 130px; gap: 25px; border-bottom: 1px solid var(--line); padding: 20px 0; align-items: baseline;}
+.course:last-child {border-bottom: 0;}
+.course h3 {font: 21px/1.35 var(--serif);}
+.course .institution {font-size: 13px; margin: 6px 0 0;}
+.course .level,.course .dates {font-size: 13px; color: var(--muted);}
+.earlier-teaching {font-size: 14px; color: var(--muted); padding: 18px 0 0; max-width: 770px;}
+.teaching-columns {display: grid; grid-template-columns: 1fr 1fr; gap: 55px;}
+.teaching-columns h2 {font-size: 27px; margin-bottom: 15px;}
+.teaching-columns p {font-size: 15px; color: var(--muted);}
+.cv-body {padding-bottom: 90px; max-width: 720px; min-height: 450px;}
+.cv-body p {color: var(--muted);}
+.cv-note {margin-top: 20px; font-size: 13px;}
+.not-found {padding: 72px 0 120px; min-height: 65vh;}
+.not-found h1 {font-size: 48px; margin-bottom: 20px;}
+@media (max-width: 900px) {
+  .wrap {width: calc(100% - 48px);}
+  .hero {grid-template-columns: minmax(0,1fr) 215px; gap: 35px;}
+  .research-lead {font-size: 24px;}
+  .hero-description {font-size: 16px;}
+  .home-teaching {gap: 35px; grid-template-columns: minmax(0,1fr) 215px;}
+  .research-layout {grid-template-columns: 155px minmax(0,1fr); gap: 30px;}
+  .research-section h2 {font-size: 28px;}
+  .awards-grid {gap: 24px;}
+}
+@media (max-width: 680px) {
+  .wrap {width: calc(100% - 40px);}
+  .header-inner {min-height: 107px; padding: 15px 0 6px; flex-direction: column; align-items: flex-start; gap: 4px;}
+  .brand {font-size: 23px;}
+  .main-nav {gap: 27px; width: 100%; font-size: 14px;}
+  .main-nav .cv-nav {margin-left: auto; padding-left: 20px;}
+  .hero {grid-template-columns: 1fr; gap: 25px; padding: 36px 0 30px;}
+  .hero h1 {font-size: 48px;}
+  .role {font-size: 17px;}
+  .institution {font-size: 15px; margin-bottom: 23px;}
+  .research-lead {font-size: 24px;}
+  .hero-description {font-size: 16px; line-height: 1.75;}
+  .action-links {gap: 18px;}
+  .profile-rail {display: grid; grid-template-columns: 1fr; gap: 0;}
+  .rail-block {padding: 17px 0 5px;}
+  .rail-block.education {display: none;}
+  .profile-rail .affiliation-list {display: grid; grid-template-columns: 1fr 1fr; gap: 8px 19px;}
+  .profile-rail .affiliation-list p {font-size: 12px; margin-bottom: 8px;}
+  .profile-rail .contact-block {display: none;}
+  .rail-label {font-size: 10px; margin-bottom: 12px;}
+  .portrait-desktop {display: none;}
+  .mobile-portrait-wrap {display: block; width: 100%; margin: 4px 0 28px;}
+  .portrait-mobile {display: block; width: min(100%, 420px); height: auto; margin: 0; object-fit: contain; object-position: center;}
+  .section {padding-top: 29px; padding-bottom: 25px;}
+  .section-heading h2 {font-size: 29px;}
+  .section-heading a {font-size: 12px;}
+  .featured-paper {grid-template-columns: 1fr; gap: 9px; padding: 23px 0;}
+  .paper-stamp {display: flex; gap: 8px; align-items: baseline; font-size: 11px;}
+  .paper-stamp .stamp-type {display: inline; margin-bottom: 0;}
+  .featured-paper h3 {font-size: 22px;}
+  .paper-coauthors {font-size: 13px;}
+  .featured-paper .venue {font-size: 13px;}
+  .paper-description {font-size: 14px;}
+  .paper-links {gap: 17px; margin-top: 6px;}
+  .home-teaching {grid-template-columns: 1fr; gap: 25px; padding-bottom: 37px;}
+  .award-note {max-width: 330px;}
+  .page-intro {padding-top: 35px; padding-bottom: 23px;}
+  .page-intro h1 {font-size: 44px;}
+  .page-intro .intro {font-size: 22px;}
+  .research-layout {display: block; padding-top: 10px; padding-bottom: 15px;}
+  .section-nav {position: static; display: flex; flex-wrap: wrap; gap: 0 20px; margin-bottom: 20px; padding-top: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line);}
+  .section-nav .rail-label {width: 100%; margin-bottom: 4px;}
+  .section-nav a {margin-bottom: 2px; font-size: 12px;}
+  .research-section {padding-bottom: 32px;}
+  .research-section h2 {font-size: 27px; padding-bottom: 17px;}
+  .paper {padding: 22px 0;}
+  .paper h3 {font-size: 22px;}
+  .paper-meta {font-size: 12px; gap: 5px 10px;}
+  .abstract-text {padding: 15px;}
+  .teaching-body {padding-top: 8px; padding-bottom: 38px;}
+  .teaching-body .statement {font-size: 16px;}
+  .awards-grid {grid-template-columns: 1fr; gap: 23px;}
+  .award {padding-left: 18px;}
+  .teaching-section h2 {font-size: 28px; margin-bottom: 20px;}
+  .course {grid-template-columns: 1fr 1fr; gap: 8px 20px; padding: 17px 0;}
+  .course .course-name {grid-column: 1 / -1;}
+  .course .dates {text-align: right;}
+  .course h3 {font-size: 21px;}
+  .teaching-columns {grid-template-columns: 1fr; gap: 10px;}
+  .footer-inner {gap: 9px; flex-direction: column;}
+  .cv-body {padding-bottom: 55px; min-height: 410px;}
+}
+@media (prefers-reduced-motion: reduce) {* {scroll-behavior: auto !important;}}
+@media print {
+  body {background: white; color: black; font-size: 11pt;}
+  .wrap {width: 100%;}
+  .site-header,.site-footer,.section-nav,.action-links,.skip-link {display: none;}
+  .hero,.research-layout,.home-teaching {display: block;}
+  .profile-rail {display: none;}
+  .page-intro {padding-top: 0;}
+  .paper,.featured-paper,.award,.course {break-inside: avoid;}
+  .paper-links {display: none;}
+}
+
+</style></head><body><a class="skip-link" href="#main-content">Skip to main content</a><header class="site-header"><div class="wrap header-inner"><a href="/" data-view="home" data-anchor="" class="brand">Wookun Kim</a><nav class="main-nav" aria-label="Main navigation"><a href="/" data-view="home" data-anchor="" aria-current="page">Home</a><a href="/research/" data-view="research" data-anchor="" >Research</a><a href="/teaching/" data-view="teaching" data-anchor="" >Teaching</a><a href="https://smu.box.com/s/9qyni2bkkcga98wvq8vywtpdidmin083" class="cv-nav" target="_blank" rel="noopener noreferrer" aria-label="Open curriculum vitae on Box (new tab)">CV<span class="external-mark" aria-hidden="true">↗</span></a></nav></div></header><main id="main-content" class="wrap not-found"><h1>Page not found</h1><p>The page may have moved. Please visit the <a href="/">homepage</a> or <a href="/research/">research page</a>.</p></main><footer class="site-footer"><div class="wrap footer-inner"><p>© 2026 Wookun Kim</p><p>Department of Economics · Southern Methodist University</p><a href="mailto:wookunkim@smu.edu">wookunkim@smu.edu</a></div></footer></body></html>
