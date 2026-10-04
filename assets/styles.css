@@ -48,6 +48,8 @@ h3 {letter-spacing: -.012em;}
 .action-links a:hover {text-decoration: underline;}
 .action-links .primary {padding: 9px 18px; border: 1px solid var(--accent); border-radius: 2px;}
 .action-links .primary:hover {background: var(--accent); color: var(--paper); text-decoration: none;}
+.email-display {color: var(--muted); font-weight: 400; user-select: all;}
+.email-text {color: var(--muted); user-select: all;}
 .profile-rail {padding-top: 4px;}
 .rail-block {border-top: 1px solid var(--line); padding: 20px 0;}
 .rail-label {font: 600 11px/1.5 var(--sans); text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin-bottom: 14px;}
@@ -76,6 +78,7 @@ h3 {letter-spacing: -.012em;}
 .paper-links {display: flex; gap: 20px; flex-wrap: wrap; align-items: center; font-size: 13px; margin-top: 10px;}
 .paper-links a {min-height: 34px; display: inline-flex; align-items: center; text-decoration: none;}
 .paper-links a:hover {text-decoration: underline;}
+.paper-links .availability-note {min-height: 34px; display: inline-flex; align-items: center; color: var(--muted); font-style: italic;}
 .home-teaching {display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 82px; padding: 6px 0 54px;}
 .home-teaching h2 {font-size: 28px; margin-bottom: 14px;}
 .home-teaching p {font-size: 15px; color: var(--muted);}
