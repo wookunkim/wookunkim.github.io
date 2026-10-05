@@ -43,7 +43,8 @@ h3 {letter-spacing: -.012em;}
 .institution {font-size: 17px; color: var(--muted); margin: 0 0 6px;}
 .preferred-name {font-size: 13px; color: var(--muted); margin: 0 0 24px;}
 .preferred-name strong {font-weight: 600; color: var(--ink);}
-.research-lead {font: 26px/1.43 var(--serif); letter-spacing: -.01em; max-width: 680px; margin: 0 0 18px;}
+.research-lead {font: 24px/1.43 var(--serif); letter-spacing: -.01em; max-width: 680px; margin: 0 0 18px;}
+.no-break {white-space: nowrap;}
 .hero-description {max-width: 660px; line-height: 1.8; margin-bottom: 22px;}
 .action-links {display: flex; gap: 22px; flex-wrap: wrap; align-items: center; font-size: 15px; font-weight: 500;}
 .action-links a {min-height: 40px; display: inline-flex; align-items: center; text-decoration: none;}
