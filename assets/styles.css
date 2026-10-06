@@ -62,7 +62,7 @@ h3 {letter-spacing: -.012em;}
 .affiliation-link .external-mark {font-size: .75em; margin-left: 5px;}
 .rail-block span {color: var(--muted);}
 .rail-block a {font-size: 14px; overflow-wrap: anywhere;}
-.portrait {width: 180px; height: 225px; object-fit: cover; object-position: 50% 40%; margin: 0 0 24px; display: block;}
+.portrait {width: 180px; height: auto; object-fit: contain; object-position: center; margin: 0 0 24px; display: block;}
 .mobile-portrait-wrap {display: none;}
 .portrait-mobile {display: none;}
 .section {padding: 43px 0 38px;}
@@ -181,8 +181,8 @@ details[open] summary {margin-bottom: 10px;}
   .profile-rail .contact-block {display: none;}
   .rail-label {font-size: 10px; margin-bottom: 12px;}
   .portrait-desktop {display: none;}
-  .mobile-portrait-wrap {display: block; width: 100%; margin: 4px 0 28px;}
-  .portrait-mobile {display: block; width: min(100%, 420px); height: auto; margin: 0; object-fit: contain; object-position: center;}
+  .mobile-portrait-wrap {display: block; width: 100%; margin: 8px 0 28px;}
+  .portrait-mobile {display: block; width: 190px; max-width: 52vw; height: auto; margin: 0; object-fit: contain; object-position: center;}
   .section {padding-top: 29px; padding-bottom: 25px;}
   .section-heading h2 {font-size: 29px;}
   .section-heading a {font-size: 12px;}
