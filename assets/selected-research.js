@@ -43,7 +43,8 @@
     if (venue) {
       const v = document.createElement('p');
       v.className = 'venue';
-      v.textContent = text(venue);
+      const rr = meta ? meta.querySelector('.rr') : null;
+      v.textContent = rr ? text(rr) + ' at ' + text(venue) : text(venue);
       body.appendChild(v);
     }
     if (description) body.appendChild(description.cloneNode(true));
@@ -54,6 +55,17 @@
 
     if (firstResource) {
       const resource = firstResource.cloneNode(true);
+      if (/^https?:/.test(resource.href)) {
+        resource.target = '_blank';
+        resource.rel = 'noopener noreferrer';
+      }
+      links.appendChild(resource);
+    }
+
+    const cesifoResource = [...article.querySelectorAll('.paper-links a')]
+      .find(a => /CESifo working paper/i.test(text(a)));
+    if (cesifoResource && cesifoResource !== firstResource) {
+      const resource = cesifoResource.cloneNode(true);
       if (/^https?:/.test(resource.href)) {
         resource.target = '_blank';
         resource.rel = 'noopener noreferrer';
