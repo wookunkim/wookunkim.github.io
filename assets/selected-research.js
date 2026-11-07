@@ -46,6 +46,11 @@
       const rr = meta ? meta.querySelector('.rr') : null;
       v.textContent = rr ? text(rr) + ' at ' + text(venue) : text(venue);
       body.appendChild(v);
+    } else if (kind === 'working' && status) {
+      const s = document.createElement('p');
+      s.className = 'venue';
+      s.textContent = text(status);
+      body.appendChild(s);
     }
     if (description) body.appendChild(description.cloneNode(true));
 
