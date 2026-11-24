@@ -96,13 +96,13 @@
     })
     .then(html => {
       const doc = new DOMParser().parseFromString(html, 'text/html');
-      const working = [...doc.querySelectorAll('#working-papers > article.paper')].slice(0, 2);
+      const working = [...doc.querySelectorAll('#working-papers > article.paper')].slice(0, 3);
       const publications = [...doc.querySelectorAll('#publications > article.paper')].slice(0, 3);
       const selected = [
         ...working.map(p => makeCard(p, 'working')),
         ...publications.map(p => makeCard(p, 'publication'))
       ];
-      if (selected.length === 5) target.replaceChildren(...selected);
+      if (selected.length === 6) target.replaceChildren(...selected);
     })
     .catch(() => {
       // Keep the static fallback already present in index.html.
